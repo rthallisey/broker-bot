@@ -257,6 +257,81 @@ class MeetBot(callbacks.Plugin):
 
     pingall = wrap(pingall, [optional('text', None)])
 
+    def startmeeting(self, irc, msg, args):
+        """ """
+        pass
+    startmeeting = wrap(startmeeting, ['admin'])
+
+    def endmeeting(self, irc, msg, args):
+        """ """
+        pass
+    endmeeting = wrap(endmeeting)
+
+    def topic(self, irc, msg, args):
+        """ """
+        pass
+    topic = wrap(topic)
+
+    def agreed(self, irc, msg, args):
+        """ """
+        pass
+    agreed = wrap(agreed, ['admin'])
+
+    def chair(self, irc, msg, args):
+        """ """
+        pass
+    chair = wrap(chair, ['admin'])
+
+    def unchair(self, irc, msg, args):
+        """ """
+        pass
+    unchair = wrap(unchair, ['admin'])
+
+    def action(self, irc, msg, args):
+        """ """
+        pass
+    action = wrap(action, ['admin'])
+
+    def info(self, irc, msg, args):
+        """ """
+        pass
+    info = wrap(info, ['admin'])
+
+    def link(self, irc, msg, args):
+        """ """
+        pass
+    link = wrap(link, ['admin'])
+
+    def undo(self, irc, msg, args):
+        """ """
+        pass
+    undo = wrap(undo, ['admin'])
+
+    def meetingtopic(self, irc, msg, args):
+        """ """
+        pass
+    meetingtopic = wrap(meetingtopic, ['admin'])
+
+    def idea(self, irc, msg, args):
+        """ """
+        pass
+    idea = wrap(idea, ['admin'])
+
+    def commands(self, irc, msg, args):
+        """ """
+        pass
+    commands = wrap(commands, ['admin'])
+
+    def lurk(self, irc, msg, args):
+        """ """
+        pass
+    lurk = wrap(lurk, ['admin'])
+
+    def unlurk(self, irc, msg, args):
+        """ """
+        pass
+    unlurk = wrap(unlurk, ['admin'])
+
     def __getattr__(self, name):
         """Proxy between proper supybot commands and # MeetBot commands.
 
