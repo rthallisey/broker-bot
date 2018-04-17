@@ -258,7 +258,7 @@ class MeetBot(callbacks.Plugin):
     pingall = wrap(pingall, [optional('text', None)])
 
     def startmeeting(self, irc, msg, args):
-        """ """
+        """Meeting Agenda https://docs.google.com/document/d/1Mj7bVYJ8NK-TwU_mxeZLprmBBZZ-xOq-Hg4CiD3E6pM/edit?usp=sharing"""
         pass
     startmeeting = wrap(startmeeting, ['admin'])
 
